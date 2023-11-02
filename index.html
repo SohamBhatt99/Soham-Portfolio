@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio website</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/e18da994d4.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="images/Soham (2).png" class="logo" alt="logo" />
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p>Web Developer</p>
+          <h1>
+            Hi,I'm <span>Soham Bhatt</span><br />
+            From India
+          </h1>
+        </div>
+      </div>
+    </div>
+    <!-- -------------About-------- -->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/aboutme.jpg" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <br />
+
+            <p>
+              I recently completed my Bachelors in Charusat University Of
+              Science And Technology.Being a Computer Branch Student I always
+              try to learn something new that goes beyond my comfort zone . I do
+              believe working in a team is the best way a leader wish for. The
+              major skills require for an computer engineer like me to develop
+              and enhance the software side of any organization for which I am
+              persistent and dedicated the work.
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li>
+                  <span>FrontEnd Technologies</span
+                  ><br />HTML,CSS,Javascript,ReactJS.
+                </li>
+                <li>
+                  <span>BackEnd Technologies</span><br />NodeJS, ExpressJS.
+                </li>
+                <li><span>DataBase</span><br />MySQL, MongoDB</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>Toshal Infotech (June 01, 2022 - June 30, 2022) </span
+                  ><br />Asp.Net Intern
+                </li>
+                <li>
+                  <span>L&T Power (June 21,2021 -July 15,2021) </span
+                  ><br />Asp.Net Intern
+                </li>
+                <li>
+                  <span
+                    >IndaPoint Technologies Pvt.Ltd(December 12,2022-May
+                    04,2023)</span
+                  ><br />React Intern
+                </li>
+                <!-- <li><span>2019 developer</span><br />React Developer</li> -->
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>2015</span><br />Completed Secondary(X)SSC (70.5
+                  percentile)
+                </li>
+                <li>
+                  <span>2020</span><br />Diploma, Computer Engineering(7.74
+                  CGPA)
+                </li>
+                <li>
+                  <span>2023</span><br />
+                  BTech,Computer Engineering(7.86 CGPA)
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- -----------------Services---------------------0 -->
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">My services</h1>
+        <br />
+        <div class="services-list">
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Web Developer</h2>
+            <p>
+              Web developers create functional, user-friendly websites and web
+              applications. They may write code, develop and test new
+              applications, or monitor site performance and traffic. Front-end
+              developers focus on the user-facing side of their work, while
+              back-end developers make websites functional and secure.
+              Full-stack developers handle both front-end and back-end tasks.
+            </p>
+            <a href="#">Learn More</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-database"></i>
+            <h2>Database Developer</h2>
+            <p>
+              Database developers, also known as database designers or database
+              programmers, are responsible for the design, programming,
+              construction, and implementation of new databases, as well as
+              modifying existing databases for platform updates and changes in
+              user needs.
+            </p>
+            <a href="#">Learn More</a>
+          </div>
+          <div>
+            <i class="fa-brands fa-react"></i>
+            <h2>React Developer</h2>
+            <p>
+              React is an open-source JavaScript library. It is sometimes
+              referred to as React.js or ReactJS. In programming, libraries
+              serve as toolkits for developers. Their contents may include
+              configuration data, prewritten code, and message templates. A
+              React developer uses their programming skills to create
+              JavaScript-based applications for web or mobile environments. They
+              typically specialize in front-end development, such as building
+              user interfaces (UI).
+            </p>
+            <a href="#">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- -------------------portfolio---------------------- -->
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="images/work-1.png" />
+            <div class="layer">
+              <h3>Recruitment Management System in ReactJS</h3>
+              <br>
+              <p>
+                I developed a Recruitment Management System project which aims
+                to simplify and automate the hiring process, making it faster
+                and more efficient.Used ReactJS, Material UI, NodeJS, Express
+                JS, MySQL Work Bench for Database.
+              </p>
+              <a href="#"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/work-2.png" />
+            <div class="layer">
+              <h3>Nursery Management System Ecommerce website</h3>
+              <br>
+              <p>
+                This project is aimed at developing a nursery store and
+                management system that makes us deliever the best services &
+                plants which are not easily available. Used HTML,CSS, Javascript
+                & MySQL
+              </p>
+              <a href="#"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/work-3.png" />
+            <div class="layer">
+              <h3>Sales & Inventory Management System</h3>
+              <br>
+              <p>
+                This was 2nd Year Project, Implemented in C#,HTML,CSS Only.
+                Sales & Inventory Management System is totally dynamic system.
+                it is also known as stock management system. Used HTML,CSS,C#
+                &MySQL
+              </p>
+              <a href="#"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+      </div>
+    </div>
+    <!-- -------------------------------------contact form-------------- -->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p><i class="fa-solid fa-envelope"></i>Soham@gmail.com</p>
+            <p><i class="fa-solid fa-phone"></i>12349236876</p>
+            <div class="social-icons">
+              <a href="https://www.facebook.com/"
+                ><i class="fa-brands fa-facebook"></i
+              ></a>
+              <a href="https://twitter.com/"
+                ><i class="fa-brands fa-twitter-square"></i
+              ></a>
+              <a href="https://www.instagram.com/"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+              <a href="https://github.com/"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+              <a href="https://www.linkedin.com/"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+            </div>
+            <a
+              href="images/SohamBhatt_Resume.pdf"
+              download
+              class="btn btn2"
+              >Download CV</a
+            >
+          </div>
+          <div class="contact-right">
+            <form>
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="Email"
+                placeholder="Your email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your Message"
+                required
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>Copyright © 2023 Sohambhatt111@gmail.com</p>
+      </div>
+    </div>
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+    <script>
+      var sidemenu = document.getElementById("sidemenu");
+
+      function openmenu() {
+        sidemenu.style.right = "0";
+      }
+      function closemenu() {
+        sidemenu.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>
