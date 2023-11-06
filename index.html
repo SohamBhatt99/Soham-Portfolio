@@ -28,7 +28,7 @@
         <div class="header-text">
           <p>Web Developer</p>
           <h1>
-            Hi,I'm <span>Soham Bhatt</span><br />
+            Hi,I'm  <span id="element"></span><br />
             From India
           </h1>
         </div>
@@ -301,5 +301,12 @@
         sidemenu.style.right = "-200px";
       }
     </script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+      <script>
+        var typed = new Typed("#element", {
+          strings: ["SohamBhatt"],
+          typeSpeed: 55,
+        });
+      </script>
   </body>
 </html>
